@@ -1,10 +1,10 @@
 # Proyecto "Cultivos en Juego"
 
-Este proyecto es una página web creada como parte del primer modulo de mi curso de "introducción a la programación" en def.v, centrado en la agricultura. Saludos a mi sensei uwu/
+Este proyecto consiste en una página web desarrollada como parte del primer módulo de mi curso de "Introducción a la Programación" en DEF.V, con un enfoque en la agricultura. ¡Agradecimientos especiales a mi sensei por sus enseñanzas a lo largo del curso y actitud positiva que se contagia! 😊
 
 ## Descripción
 
-La página tiene un enfoque en conocer los desafíos de la agricultura actual, así como los usuarios pueden explorar una lista de juegos relacionados con la vida en el campo, y acceder a un formulario para enviar comentarios o preguntas (unicamente como simulación).
+La página está enfocada en explorar los desafíos actuales de la agricultura, permitiendo a los usuarios descubrir una lista de juegos relacionados con la vida rural. Además, ofrece un formulario para enviar comentarios o preguntas, el cual funciona únicamente como simulación.
 
 ## Funcionalidades
 
