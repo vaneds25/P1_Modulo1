@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+
+
+/* Estilos generales */
+
+*{ 
+  padding: 0;
+  margin: 0;
+}
+h1{
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.9); /* Configuración de la sombra */
+  font-size: 4rem;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
+}
+
+h2{
+	color: #0c6331;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 350;
+}
+
+h3{
+	color: #5f3d12;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 200;
+  margin-bottom: 1rem; /* Espaciado hacia abajo (entre el encabezado y el texto) */
+}
+
+.titulos {
+  height: 600px;
+  	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 670px;
+  position: relative;
+}
+
+/* "Imagenes atrás" del parallax */
+.bg1{
+background-image: url("recursos/inicio.jpg");
+}
+.bg2{
+background-image: url("recursos/desarrollo.gif");
+}
+.bg3{
+background-image: url("recursos/fin.jpg");
+}
+
+/* Responsivo */
+.bg1, .bg2, .bg3 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+}
+
+
+.texto {
+  padding: 5%;
+  width: 100%;
+  background-color: white;
+	text-align: justify;
+}
+
+
+
+
+body{
+  color: rgb(27, 27, 27);
+  font-family: 'Krub' !important;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  }
+      .portfolio-item-caption{
+        background-color: #aa84f9 !important;
+      }
+      
+      .modal-body .btn-primary {
+        background-color: #aa84f9 !important;
+        border: none;
+      }
+      
+      body {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+/*ESTILOS FOOTER*/
+#footer .gotop {
+  position: fixed;
+  z-index: 3;
+  bottom: 2vh;
+  right: 2vw;
+}
+#footer .gotop img {
+  width: 5vw;
+}
+
+
+/* Media */
+
+@media screen and (max-width: 800px) and  (min-width: 200px) {
+  /* Para teléfonos: */
+  [class*="col-"] {
+    width: 100%;
+  }
+ 
+  .iconos-redes-sociales {
+    display: flex;
+    justify-content: space-around;
+  }
+  body
+  {
+    font-size: 1.5rem;
+  }
+  h1
+  {
+    font-size: 3rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  #footer .gotop img {
+    width: 70px;
+    opacity: 0.8;
+}
+}
+
+/* Estilos para lista no ordenada */
+.custom-list {
+  list-style: none; /* Elimina las viñetas predeterminadas */
+  padding: 0;
+}
+
+.custom-list li {
+  display: flex; /* Flexbox para organizar texto e imagen */
+  justify-content: space-between; /* Separar texto e imagen */
+  align-items: center; /* Centrar contenido verticalmente */
+  margin-bottom: 1.5em; /* Espaciado entre elementos */
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.custom-list .text {
+  flex: 3; /* El texto ocupa más espacio */
+  text-align: left; /* Alineado a la izquierda */
+  padding-right: 1em; /* Espaciado entre texto e imagen */
+}
+
+.custom-list .image {
+  flex: 1; /* La imagen ocupa menos espacio */
+  text-align: right; /* Alineación de la imagen */
+}
+
+.custom-list .image img {
+  width: 500px; /* Ancho fijo */
+  height: 500px; /* Alto fijo */
+  object-fit: cover; /* Recortar imagen si excede dimensiones */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+
+
+
+
+/* Estilo para la lista ordenada */
+.lista-ordenada {
+  list-style-type: decimal; 
+  padding-left: 1rem; /* Espacio a la izquierda para la numeración */
+  margin-left: 0; /* Asegura que la lista tenga margen mínimo */
+  counter-reset: item; 
+  line-height: 1.5; 
+}
+
+.lista-ordenada li {
+  display: flex; /* Flexbox para organizar texto e imagen */
+  justify-content: space-between; /* Separar texto e imagen */
+  align-items: center; /* Centrar contenido verticalmente */
+  margin-bottom: 1.5em; /* Espaciado entre elementos */
+  padding: 1em;
+  border-radius: 8px;
+}
+
+/* Estilo de los números de la lista */
+.lista-ordenada li::before {
+  content: counter(item) ". "; /* Añade los números de forma personalizada */
+  counter-increment: item; /* Incrementa el contador para cada elemento */
+  font-weight: bold;
+  color: #BB68FC; /* Color para los números */
+  margin-right: 1rem; /* Espacio entre el número y el texto */
+}
+
+/* Estilo de la parte de texto */
+.lista-ordenada .text {
+  flex: 3; /* El texto ocupa más espacio */
+  text-align: left; /* Alineado a la izquierda */
+  padding-right: 1em; /* Espaciado entre texto e imagen */
+}
+
+/* Estilo para la imagen */
+.lista-ordenada .image {
+  flex-shrink: 0; /* Evitar que la imagen se encoja */
+}
+
+.lista-ordenada .image img {
+  width: 500px; /* Tamaño ajustado para la imagen */
+  height: 500px; /* Tamaño ajustado para la imagen */
+  object-fit: cover; /* Recorta la imagen si es necesario */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo de los enlaces dentro de la lista */
+.lista-ordenada li a {
+  color: green; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado por defecto */
+  font-weight: 500; /* Texto más pesado */
+}
+
+.lista-ordenada li a:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+
+
+/* Estilo de la cuarta sección - formularios */
+.bg4 {
+  background-image: url("recursos/contacto.jpg"); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  padding: 2rem;
+  border-radius: 8px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.8rem 2rem;
+  background-color: #BB68FC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #9b4dca; /* Color de hover para el botón */
+}
+
